@@ -1,0 +1,191 @@
+{
+  "version": "1.0.0",
+  "total_campos": 30,
+  "enviar_a_jev": false,
+  "politica_null": "Dato desconocido o no extraído = null con razón; nunca cero, false ni una fecha inventada. Usar no_aplica en status para formatos no pertinentes.",
+  "campos": {
+    "file_id": {
+      "tipo": "string",
+      "definicion": "Identificador estable asignado por la aplicación.",
+      "origen": "ingesta"
+    },
+    "file_name": {
+      "tipo": "string",
+      "definicion": "Nombre del archivo; pista auxiliar, nunca prueba de su contenido.",
+      "origen": "sistema_archivos"
+    },
+    "extension": {
+      "tipo": "string",
+      "definicion": "Extensión normalizada en minúsculas, sin inferir tipo documental.",
+      "origen": "sistema_archivos"
+    },
+    "mime_type": {
+      "tipo": "string",
+      "definicion": "Tipo MIME detectado o declarado por una fuente conocida; guardar el origen.",
+      "origen": "detector_formato"
+    },
+    "size_bytes": {
+      "tipo": "integer",
+      "definicion": "Tamaño exacto del archivo original en bytes.",
+      "origen": "sistema_archivos"
+    },
+    "sha256_original": {
+      "tipo": "string",
+      "definicion": "SHA-256 de los bytes originales, para duplicados exactos.",
+      "origen": "hash"
+    },
+    "sha256_extracted_text": {
+      "tipo": "string",
+      "definicion": "SHA-256 del texto normalizado con versión de normalización registrada.",
+      "origen": "hash"
+    },
+    "ingested_at": {
+      "tipo": "datetime",
+      "definicion": "Instante de incorporación al repositorio. No es la fecha de creación del contenido.",
+      "origen": "ingesta"
+    },
+    "filesystem_modified_at": {
+      "tipo": "datetime",
+      "definicion": "Marca temporal del sistema de archivos. No equivale a actualización semántica.",
+      "origen": "sistema_archivos"
+    },
+    "page_count": {
+      "tipo": "integer",
+      "definicion": "Número de páginas del original según parser que soporte el formato.",
+      "origen": "parser"
+    },
+    "sheet_count": {
+      "tipo": "integer",
+      "definicion": "Número de hojas de un libro según parser.",
+      "origen": "parser"
+    },
+    "slide_count": {
+      "tipo": "integer",
+      "definicion": "Número de diapositivas según parser.",
+      "origen": "parser"
+    },
+    "attachment_count": {
+      "tipo": "integer",
+      "definicion": "Adjuntos o piezas embebidas detectados por parser.",
+      "origen": "parser"
+    },
+    "extracted_char_count": {
+      "tipo": "integer",
+      "definicion": "Caracteres Unicode del texto suministrado, con una normalización definida.",
+      "origen": "codigo"
+    },
+    "extracted_word_count": {
+      "tipo": "integer",
+      "definicion": "Recuento según la función de tokenización de palabras documentada por la aplicación. No equiparar palabras y tokens.",
+      "origen": "codigo"
+    },
+    "included_unit_count": {
+      "tipo": "integer",
+      "definicion": "Unidades de origen incorporadas a la clasificación: páginas, hojas o secciones según formato.",
+      "origen": "pipeline"
+    },
+    "source_unit_count": {
+      "tipo": "integer",
+      "definicion": "Total de unidades de origen según el parser; null cuando no se conoce.",
+      "origen": "pipeline"
+    },
+    "extraction_coverage_ratio": {
+      "tipo": "number",
+      "definicion": "included_unit_count/source_unit_count cuando comparten unidad y el total es conocido; no mide cobertura semántica.",
+      "origen": "codigo"
+    },
+    "has_native_text": {
+      "tipo": "boolean",
+      "definicion": "El parser encuentra texto nativo en el original.",
+      "origen": "parser"
+    },
+    "extraction_method": {
+      "tipo": "string",
+      "definicion": "Método aplicado: native, ocr, vision_description, mixed, not_extracted.",
+      "origen": "pipeline"
+    },
+    "extractor_version": {
+      "tipo": "string",
+      "definicion": "Identificador exacto del extractor y su configuración.",
+      "origen": "pipeline"
+    },
+    "structure_preserved": {
+      "tipo": "boolean",
+      "definicion": "El pipeline conserva explícitamente campos, tablas, encabezados u otras estructuras.",
+      "origen": "pipeline"
+    },
+    "visual_content_described": {
+      "tipo": "boolean",
+      "definicion": "El pipeline ha aportado descripciones del contenido visual pertinente; no lo decide Jev.",
+      "origen": "pipeline"
+    },
+    "is_encrypted": {
+      "tipo": "boolean",
+      "definicion": "Cifrado detectado mediante parser, sin inferir del texto.",
+      "origen": "parser"
+    },
+    "parser_image_count": {
+      "tipo": "integer",
+      "definicion": "Recuento de objetos imagen según una definición del parser; puede incluir logotipos o máscaras.",
+      "origen": "parser"
+    },
+    "detected_url_count": {
+      "tipo": "integer",
+      "definicion": "URLs reconocidas por parser o detector; deduplicación y normalización documentadas.",
+      "origen": "codigo"
+    },
+    "length_bucket": {
+      "tipo": "enum",
+      "definicion": "Tramo determinista basado en extracted_word_count; conservar si es full, partial o unknown.",
+      "origen": "codigo"
+    },
+    "document_date": {
+      "tipo": "date",
+      "definicion": "Fecha de la pieza tras seleccionar su papel semántico y validar con código; no sustituir por mtime.",
+      "origen": "extraccion_y_validacion"
+    },
+    "expires_at": {
+      "tipo": "datetime",
+      "definicion": "Fin de validez extraído y validado; null si no está declarado o es ambiguo.",
+      "origen": "extraccion_y_validacion"
+    },
+    "expired_at_reference_time": {
+      "tipo": "boolean",
+      "definicion": "Comparación por código entre expires_at y reference_time con zona horaria; null si falta un dato.",
+      "origen": "codigo"
+    }
+  },
+  "tramos_longitud": [
+    {
+      "id": "sin_texto",
+      "min_palabras": 0,
+      "max_palabras": 0
+    },
+    {
+      "id": "muy_corto",
+      "min_palabras": 1,
+      "max_palabras": 250
+    },
+    {
+      "id": "corto",
+      "min_palabras": 251,
+      "max_palabras": 1000
+    },
+    {
+      "id": "medio",
+      "min_palabras": 1001,
+      "max_palabras": 5000
+    },
+    {
+      "id": "largo",
+      "min_palabras": 5001,
+      "max_palabras": 20000
+    },
+    {
+      "id": "muy_largo",
+      "min_palabras": 20001,
+      "max_palabras": null
+    }
+  ],
+  "nota_tramos": "Umbrales propuestos para esta aplicación, no estándares ni capacidad del modelo. Si coverage != full, el tramo solo describe el texto examinado."
+}

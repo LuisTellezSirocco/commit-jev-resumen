@@ -1,0 +1,13 @@
+Verificación local, 22-09-2026
+
+235 preguntas en JSON válido.
+223 facetas sustantivas + 12 controles de aplicabilidad.
+49 preguntas en el núcleo; 38 áreas temáticas; 63 opciones de tipo documental.
+12 escalas de cinco niveles (0..4).
+30 campos de metadatos deterministas.
+11 casos sintéticos de prueba (sin inferencia ejecutada).
+13 pruebas unitarias: correctas.
+Validación frente al JSON Schema local: correcta.
+Prueba CLI con los 235 IDs: 8 peticiones JSON, sin red.
+
+No se ha llamado a la API de Jev ni medido precisión, latencia o coste.

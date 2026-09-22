@@ -1,0 +1,20 @@
+{
+  "document": {
+    "id": "SUSTITUIR_ID",
+    "extraction": {
+      "coverage": "unknown",
+      "structure_preserved": false,
+      "visual_content_described": false,
+      "missing_content": [
+        "cobertura_pendiente_de_verificar"
+      ]
+    },
+    "segments": [
+      {
+        "id": "segmento_0001",
+        "page": null,
+        "text": "SUSTITUIR_POR_TEXTO_EXTRAIDO_DEL_DOCUMENTO"
+      }
+    ]
+  }
+}

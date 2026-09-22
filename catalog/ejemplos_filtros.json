@@ -1,0 +1,152 @@
+{
+  "formato": "DSL ilustrativa de la aplicación; cada condición exige un resultado accepted salvo que se pida explícitamente otro estado.",
+  "consultas": [
+    {
+      "nombre": "Guías prácticas de informática, cortas y con código",
+      "all": [
+        {
+          "field": "tipo_documental",
+          "op": "in",
+          "value": [
+            "manual_guia",
+            "tutorial",
+            "protocolo_procedimiento"
+          ]
+        },
+        {
+          "field": "tema_informatica_software",
+          "op": "in",
+          "value": [
+            "central",
+            "secundario"
+          ]
+        },
+        {
+          "field": "tiene_codigo",
+          "op": "eq",
+          "value": "presente"
+        },
+        {
+          "field": "metadata.extracted_word_count",
+          "op": "lte",
+          "value": 5000
+        },
+        {
+          "field": "document.extraction.coverage",
+          "op": "eq",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "nombre": "Facturas relacionadas con formación, sin confundirlas con cursos",
+      "all": [
+        {
+          "field": "tipo_documental",
+          "op": "eq",
+          "value": "factura"
+        },
+        {
+          "field": "tema_educacion_formacion",
+          "op": "in",
+          "value": [
+            "mencion",
+            "secundario",
+            "central"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Protocolos con responsables, excepciones y plazos",
+      "all": [
+        {
+          "field": "tipo_documental",
+          "op": "eq",
+          "value": "protocolo_procedimiento"
+        },
+        {
+          "field": "responsables_asignados",
+          "op": "eq",
+          "value": "presente"
+        },
+        {
+          "field": "excepciones_reglas",
+          "op": "eq",
+          "value": "presente"
+        },
+        {
+          "field": "fecha_limite_accion",
+          "op": "eq",
+          "value": "presente"
+        }
+      ]
+    },
+    {
+      "nombre": "Lecturas introductorias con ejemplos sobre salud",
+      "all": [
+        {
+          "field": "tema_salud_medicina",
+          "op": "in",
+          "value": [
+            "central",
+            "secundario"
+          ]
+        },
+        {
+          "field": "score_complejidad_lectura",
+          "op": "lte",
+          "value": 1.5
+        },
+        {
+          "field": "incluye_ejemplos",
+          "op": "eq",
+          "value": "presente"
+        }
+      ]
+    },
+    {
+      "nombre": "Pendientes de revisión antes de indexar",
+      "any": [
+        {
+          "field": "legibilidad_textual",
+          "op": "in",
+          "value": [
+            "deteriorado",
+            "inutilizable",
+            "sin_texto"
+          ]
+        },
+        {
+          "field": "cobertura_semantica",
+          "op": "in",
+          "value": [
+            "insuficiente",
+            "sin_contenido"
+          ]
+        },
+        {
+          "field": "document.extraction.coverage",
+          "op": "ne",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "nombre": "Cuestionarios que ya contienen respuestas",
+      "all": [
+        {
+          "field": "tipo_documental",
+          "op": "eq",
+          "value": "cuestionario_encuesta"
+        },
+        {
+          "field": "tiene_qa",
+          "op": "eq",
+          "value": "presente"
+        }
+      ]
+    }
+  ],
+  "seguridad": "Ningún filtro semántico concede acceso. Aplicar permisos del repositorio ANTES de recuperar fragmentos o mostrar resultados."
+}

@@ -1,0 +1,13 @@
+{
+  "name": "atlas-jev-docs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Development tools for the static document explorer",
+  "scripts": {
+    "format": "prettier --write web",
+    "format:check": "prettier --check web"
+  },
+  "devDependencies": {
+    "prettier": "3.9.8"
+  }
+}

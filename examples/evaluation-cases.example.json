@@ -1,0 +1,10 @@
+{
+  "description": "Nombres y consulta ficticios. Copia a data/evaluation-cases.json y adapta a tus documentos locales.",
+  "checks": [
+    ["factura_ejemplo", "tipo_documental", "factura"],
+    ["manual_ejemplo", "tiene_pasos", "presente"]
+  ],
+  "queries": [
+    ["Instrucciones para instalar el producto de ejemplo", ["manual_ejemplo"]]
+  ]
+}

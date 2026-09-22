@@ -1,0 +1,46 @@
+[project]
+name = "atlas-jev-docs"
+version = "0.1.0"
+description = "Explorador documental local con clasificación y búsqueda mediante JEV"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx==0.28.1",
+    "pymupdf==1.28.2",
+    "python-dotenv==1.2.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+    "ruff==0.16.7",
+]
+
+[tool.uv]
+# Aplicación ejecutada desde el checkout; catalog/ y web/ son recursos del proyecto.
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "catalog/test_kit.py"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.ruff]
+required-version = "==0.16.7"
+target-version = "py312"
+line-length = 100
+extend-exclude = ["data", "docs", "exports", "output", "tmp", "node_modules"]
+force-exclude = true
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Estos scripts admiten ejecución directa y configuran su ruta antes de importar.
+"scripts/evaluate.py" = ["E402"]
+"catalog/build_support.py" = ["E402"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"

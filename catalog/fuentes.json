@@ -1,0 +1,38 @@
+{
+  "verificado_el": "2026-09-22",
+  "nota": "Fuentes técnicas de la API. La taxonomía y las rúbricas documentales son una propuesta propia, no una taxonomía oficial de TypeSafe.",
+  "fuentes": [
+    {
+      "titulo": "HTTP API",
+      "url": "https://docs.typesafe.ai/api"
+    },
+    {
+      "titulo": "Choice",
+      "url": "https://docs.typesafe.ai/primitives/choice"
+    },
+    {
+      "titulo": "Score",
+      "url": "https://docs.typesafe.ai/primitives/score"
+    },
+    {
+      "titulo": "Noul",
+      "url": "https://docs.typesafe.ai/primitives/noul"
+    },
+    {
+      "titulo": "Models: límites, idiomas e inputs",
+      "url": "https://docs.typesafe.ai/models"
+    },
+    {
+      "titulo": "Confidence",
+      "url": "https://docs.typesafe.ai/confidence"
+    },
+    {
+      "titulo": "Jev 1.13 jaggedness",
+      "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13"
+    },
+    {
+      "titulo": "TypeSafe agent skill",
+      "url": "https://raw.githubusercontent.com/typesafe-ai/skills/main/skills/typesafe-ai/SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,2014 @@
+{
+  "version_catalogo": "1.0.0",
+  "fecha_diseno": "2026-09-22",
+  "idioma": "es",
+  "total_preguntas": 235,
+  "grupos": {
+    "identidad": {
+      "nombre": "Identidad, finalidad y destinatarios",
+      "preguntas": [
+        "tipo_documental",
+        "finalidad_principal",
+        "unidad_documental",
+        "modo_representacion",
+        "idioma_principal",
+        "perfil_linguistico",
+        "audiencia_principal",
+        "ambito_uso",
+        "estado_elaboracion",
+        "caracter_realidad",
+        "alcance_espacial",
+        "dependencia_documental"
+      ]
+    },
+    "temas": {
+      "nombre": "Áreas temáticas independientes",
+      "preguntas": [
+        "tema_finanzas_contabilidad",
+        "tema_fiscalidad",
+        "tema_derecho_justicia",
+        "tema_administracion_publica",
+        "tema_empresa_estrategia",
+        "tema_comercio_marketing",
+        "tema_trabajo_rrhh",
+        "tema_operaciones_calidad",
+        "tema_logistica_transporte",
+        "tema_informatica_software",
+        "tema_datos_ia",
+        "tema_ciberseguridad_privacidad",
+        "tema_ingenieria_industria",
+        "tema_construccion_inmuebles",
+        "tema_energia",
+        "tema_medioambiente_clima",
+        "tema_agricultura_ganaderia",
+        "tema_salud_medicina",
+        "tema_psicologia_bienestar",
+        "tema_nutricion_alimentacion",
+        "tema_educacion_formacion",
+        "tema_matematicas_estadistica",
+        "tema_ciencias_naturales",
+        "tema_historia_arqueologia",
+        "tema_sociedad_politica",
+        "tema_filosofia_etica",
+        "tema_religion_espiritualidad",
+        "tema_arte_diseno",
+        "tema_literatura_lenguas",
+        "tema_musica_audiovisual",
+        "tema_deporte_actividad_fisica",
+        "tema_viajes_turismo",
+        "tema_cocina_gastronomia",
+        "tema_hogar_bricolaje",
+        "tema_familia_vida_personal",
+        "tema_ocio_juegos",
+        "tema_animales_veterinaria",
+        "tema_geografia_territorio"
+      ]
+    },
+    "estructura": {
+      "nombre": "Estructura y formatos de contenido",
+      "preguntas": [
+        "tiene_secciones",
+        "tiene_indice",
+        "tiene_resumen",
+        "tiene_conclusiones",
+        "tiene_anexos",
+        "tiene_glosario",
+        "tiene_bibliografia",
+        "tiene_notas",
+        "tiene_tablas",
+        "tiene_listas",
+        "tiene_pasos",
+        "tiene_checklist",
+        "tiene_preguntas",
+        "tiene_qa",
+        "tiene_dialogo",
+        "tiene_campos",
+        "tiene_campos_pendientes",
+        "tiene_codigo",
+        "tiene_comandos",
+        "tiene_configuracion",
+        "tiene_formulas",
+        "tiene_graficos",
+        "tiene_diagramas",
+        "tiene_imagenes_descritas",
+        "tiene_cronologia",
+        "tiene_firmas_referidas"
+      ]
+    },
+    "conocimiento": {
+      "nombre": "Explicación, aprendizaje y evidencia",
+      "preguntas": [
+        "explica_conceptos",
+        "incluye_definiciones",
+        "incluye_ejemplos",
+        "incluye_casos_estudio",
+        "incluye_ejercicios",
+        "incluye_soluciones",
+        "incluye_objetivos_aprendizaje",
+        "incluye_prerrequisitos",
+        "incluye_metodologia",
+        "incluye_datos_empiricos",
+        "incluye_resultados",
+        "incluye_hipotesis",
+        "incluye_argumentos",
+        "incluye_demostraciones",
+        "incluye_comparaciones",
+        "incluye_ventajas_inconvenientes",
+        "incluye_limitaciones",
+        "incluye_incertidumbre",
+        "incluye_supuestos",
+        "incluye_causalidad",
+        "incluye_recomendaciones",
+        "incluye_errores_frecuentes"
+      ]
+    },
+    "operaciones": {
+      "nombre": "Acciones, procedimientos y decisiones",
+      "preguntas": [
+        "accion_solicitada",
+        "responsables_asignados",
+        "entregables_definidos",
+        "fecha_limite_accion",
+        "prioridad_explicita",
+        "urgencia_explicita",
+        "requisitos_definidos",
+        "criterios_aceptacion",
+        "condiciones_ramas",
+        "excepciones_reglas",
+        "prohibiciones",
+        "obligaciones",
+        "derechos_facultades",
+        "riesgos_identificados",
+        "medidas_mitigacion",
+        "requisitos_previos",
+        "recursos_necesarios",
+        "dependencias_tareas",
+        "aprobaciones_requeridas",
+        "decisiones_tomadas",
+        "decisiones_pendientes",
+        "procedimiento_escalado",
+        "criterios_parada"
+      ]
+    },
+    "economia_datos": {
+      "nombre": "Información económica, cuantitativa y registros",
+      "preguntas": [
+        "importes_monetarios",
+        "desglose_precios",
+        "impuestos_desglosados",
+        "condiciones_pago",
+        "presupuesto_planificado",
+        "transacciones_registradas",
+        "cantidades_unidades",
+        "estadisticas_agregadas",
+        "series_temporales",
+        "proyecciones_estimaciones",
+        "metas_indicadores",
+        "registros_individuales",
+        "diccionario_datos",
+        "identificadores_operativos",
+        "esquema_clave_valor",
+        "datos_inventario"
+      ]
+    },
+    "tiempo": {
+      "nombre": "Fechas, temporalidad y estado declarado",
+      "preguntas": [
+        "fecha_emision",
+        "fecha_actualizacion",
+        "periodo_referencia",
+        "fecha_vigencia_inicio",
+        "fecha_vigencia_fin",
+        "fecha_evento",
+        "periodicidad",
+        "referencias_relativas",
+        "version_identificada",
+        "historico_cambios",
+        "sustitucion_declarada",
+        "caducidad_declarada",
+        "orientacion_temporal",
+        "vigencia_declarada",
+        "estado_ejecucion",
+        "relacion_temporal_datos"
+      ]
+    },
+    "procedencia": {
+      "nombre": "Autoría, fuentes y relaciones documentales",
+      "preguntas": [
+        "autor_declarado",
+        "emisor_declarado",
+        "destinatario_declarado",
+        "fuentes_citadas",
+        "citas_textuales",
+        "enlaces_referencia",
+        "referencias_normativas",
+        "referencias_otras_piezas",
+        "anexos_no_incluidos",
+        "aprobacion_declarada",
+        "procedencia_datos",
+        "metodo_recogida",
+        "licencia_declarada",
+        "atribucion_terceros",
+        "caracter_oficial_declarado",
+        "relacion_con_fuentes"
+      ]
+    },
+    "sensibilidad": {
+      "nombre": "Sensibilidad y restricciones declaradas",
+      "preguntas": [
+        "datos_contacto_personales",
+        "identificacion_personal",
+        "datos_domicilio_personal",
+        "datos_financieros_personales",
+        "datos_salud_personales",
+        "datos_menores",
+        "datos_intimos_sensibles",
+        "credenciales_secretos",
+        "informacion_interna",
+        "confidencialidad_declarada",
+        "restriccion_distribucion",
+        "anonimizacion_declarada",
+        "ocultaciones_visibles",
+        "instrucciones_riesgo",
+        "instruccion_al_clasificador",
+        "contenido_personal_privado"
+      ]
+    },
+    "calidad": {
+      "nombre": "Calidad observable de la representación",
+      "preguntas": [
+        "texto_truncado",
+        "caracteres_corruptos",
+        "orden_lectura_roto",
+        "ruido_repetitivo",
+        "tablas_desestructuradas",
+        "referencias_rotas",
+        "contenido_duplicado_interno",
+        "contradiccion_explicita",
+        "marcadores_pendientes",
+        "dependencia_visual_no_resuelta",
+        "faltan_definiciones_necesarias",
+        "legibilidad_textual",
+        "cobertura_semantica",
+        "coherencia_unidad"
+      ]
+    },
+    "usos": {
+      "nombre": "Componentes y usos documentales",
+      "preguntas": [
+        "componente_transaccional",
+        "componente_contractual",
+        "componente_didactico",
+        "componente_procedimental",
+        "componente_referencia",
+        "componente_evaluacion",
+        "componente_promocional",
+        "componente_narrativo",
+        "componente_testimonial",
+        "componente_instrucciones_uso",
+        "componente_solucion_problemas",
+        "componente_plantilla_reutilizable"
+      ]
+    },
+    "escalas": {
+      "nombre": "Dimensiones puntuadas y sus controles de aplicabilidad",
+      "preguntas": [
+        "evaluabilidad_complejidad_lectura",
+        "score_complejidad_lectura",
+        "evaluabilidad_abstraccion",
+        "score_abstraccion",
+        "evaluabilidad_detalle_desarrollo",
+        "score_detalle_desarrollo",
+        "evaluabilidad_accionabilidad",
+        "score_accionabilidad",
+        "evaluabilidad_organizacion",
+        "score_organizacion",
+        "evaluabilidad_densidad_cuantitativa",
+        "score_densidad_cuantitativa",
+        "evaluabilidad_orientacion_ejemplos",
+        "score_orientacion_ejemplos",
+        "evaluabilidad_dependencia_contexto",
+        "score_dependencia_contexto",
+        "evaluabilidad_sensibilidad_temporal",
+        "score_sensibilidad_temporal",
+        "evaluabilidad_intensidad_promocional",
+        "score_intensidad_promocional",
+        "evaluabilidad_peso_opinion",
+        "score_peso_opinion",
+        "evaluabilidad_incertidumbre_explicada",
+        "score_incertidumbre_explicada"
+      ]
+    }
+  },
+  "preguntas": {
+    "tipo_documental": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Tipo documental principal",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "finalidad_principal": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Finalidad principal",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "unidad_documental": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Unidad documental",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "modo_representacion": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Representación predominante",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "idioma_principal": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Idioma principal",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "perfil_linguistico": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Perfil multilingüe",
+      "nucleo": false,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "audiencia_principal": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Destinatario previsto",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "ambito_uso": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Ámbito de uso aparente",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "estado_elaboracion": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Estado de elaboración declarado",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "caracter_realidad": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Carácter factual o creativo",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "alcance_espacial": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Alcance geográfico declarado",
+      "nucleo": false,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "dependencia_documental": {
+      "grupo": "identidad",
+      "etiqueta_ui": "Autonomía de lectura",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_finanzas_contabilidad": {
+      "grupo": "temas",
+      "etiqueta_ui": "Finanzas y contabilidad",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_fiscalidad": {
+      "grupo": "temas",
+      "etiqueta_ui": "Fiscalidad",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_derecho_justicia": {
+      "grupo": "temas",
+      "etiqueta_ui": "Derecho y justicia",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_administracion_publica": {
+      "grupo": "temas",
+      "etiqueta_ui": "Administración pública",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_empresa_estrategia": {
+      "grupo": "temas",
+      "etiqueta_ui": "Empresa y estrategia",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_comercio_marketing": {
+      "grupo": "temas",
+      "etiqueta_ui": "Comercio y marketing",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_trabajo_rrhh": {
+      "grupo": "temas",
+      "etiqueta_ui": "Trabajo y recursos humanos",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_operaciones_calidad": {
+      "grupo": "temas",
+      "etiqueta_ui": "Operaciones y calidad",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_logistica_transporte": {
+      "grupo": "temas",
+      "etiqueta_ui": "Logística y transporte",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_informatica_software": {
+      "grupo": "temas",
+      "etiqueta_ui": "Informática y software",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_datos_ia": {
+      "grupo": "temas",
+      "etiqueta_ui": "Datos e inteligencia artificial",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_ciberseguridad_privacidad": {
+      "grupo": "temas",
+      "etiqueta_ui": "Ciberseguridad y privacidad",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_ingenieria_industria": {
+      "grupo": "temas",
+      "etiqueta_ui": "Ingeniería e industria",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_construccion_inmuebles": {
+      "grupo": "temas",
+      "etiqueta_ui": "Construcción e inmuebles",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_energia": {
+      "grupo": "temas",
+      "etiqueta_ui": "Energía",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_medioambiente_clima": {
+      "grupo": "temas",
+      "etiqueta_ui": "Medioambiente y clima",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_agricultura_ganaderia": {
+      "grupo": "temas",
+      "etiqueta_ui": "Agricultura y ganadería",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_salud_medicina": {
+      "grupo": "temas",
+      "etiqueta_ui": "Salud y medicina",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_psicologia_bienestar": {
+      "grupo": "temas",
+      "etiqueta_ui": "Psicología y bienestar",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_nutricion_alimentacion": {
+      "grupo": "temas",
+      "etiqueta_ui": "Nutrición y alimentación",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_educacion_formacion": {
+      "grupo": "temas",
+      "etiqueta_ui": "Educación y formación",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_matematicas_estadistica": {
+      "grupo": "temas",
+      "etiqueta_ui": "Matemáticas y estadística",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_ciencias_naturales": {
+      "grupo": "temas",
+      "etiqueta_ui": "Ciencias naturales",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_historia_arqueologia": {
+      "grupo": "temas",
+      "etiqueta_ui": "Historia y arqueología",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_sociedad_politica": {
+      "grupo": "temas",
+      "etiqueta_ui": "Sociedad y política",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_filosofia_etica": {
+      "grupo": "temas",
+      "etiqueta_ui": "Filosofía y ética",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_religion_espiritualidad": {
+      "grupo": "temas",
+      "etiqueta_ui": "Religión y espiritualidad",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_arte_diseno": {
+      "grupo": "temas",
+      "etiqueta_ui": "Arte y diseño",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_literatura_lenguas": {
+      "grupo": "temas",
+      "etiqueta_ui": "Literatura y lenguas",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_musica_audiovisual": {
+      "grupo": "temas",
+      "etiqueta_ui": "Música y audiovisual",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_deporte_actividad_fisica": {
+      "grupo": "temas",
+      "etiqueta_ui": "Deporte y actividad física",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_viajes_turismo": {
+      "grupo": "temas",
+      "etiqueta_ui": "Viajes y turismo",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_cocina_gastronomia": {
+      "grupo": "temas",
+      "etiqueta_ui": "Cocina y gastronomía",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_hogar_bricolaje": {
+      "grupo": "temas",
+      "etiqueta_ui": "Hogar y bricolaje",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_familia_vida_personal": {
+      "grupo": "temas",
+      "etiqueta_ui": "Familia y vida personal",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_ocio_juegos": {
+      "grupo": "temas",
+      "etiqueta_ui": "Ocio y juegos",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_animales_veterinaria": {
+      "grupo": "temas",
+      "etiqueta_ui": "Animales y veterinaria",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tema_geografia_territorio": {
+      "grupo": "temas",
+      "etiqueta_ui": "Geografía y territorio",
+      "nucleo": false,
+      "semantica": "topic_relevance",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_secciones": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Secciones tituladas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_indice": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Índice o tabla de contenidos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_resumen": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Resumen inicial o abstract",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_conclusiones": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Conclusiones",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_anexos": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Anexos incluidos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_glosario": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Glosario",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_bibliografia": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Bibliografía",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_notas": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Notas al pie o finales",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_tablas": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Tablas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_listas": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Listas no secuenciales",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_pasos": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Pasos secuenciales",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_checklist": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Elementos de comprobación",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_preguntas": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Preguntas sustantivas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_qa": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Preguntas con respuestas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_dialogo": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Turnos de diálogo",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_campos": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Campos de formulario",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_campos_pendientes": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Campos sin completar",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_codigo": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Código fuente",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_comandos": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Comandos ejecutables",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_configuracion": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Configuración estructurada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_formulas": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Fórmulas y ecuaciones",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_graficos": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Gráficos representados",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_diagramas": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Diagramas representados",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_imagenes_descritas": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Imágenes descritas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_cronologia": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Cronología",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tiene_firmas_referidas": {
+      "grupo": "estructura",
+      "etiqueta_ui": "Firma o sello representado",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "explica_conceptos": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Explicaciones conceptuales",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_definiciones": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Definiciones",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_ejemplos": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Ejemplos concretos",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_casos_estudio": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Casos de estudio",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_ejercicios": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Ejercicios propuestos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_soluciones": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Soluciones a ejercicios",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_objetivos_aprendizaje": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Objetivos de aprendizaje",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_prerrequisitos": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Conocimientos previos requeridos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_metodologia": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Metodología",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_datos_empiricos": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Observaciones empíricas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_resultados": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Resultados",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_hipotesis": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Hipótesis",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_argumentos": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Argumentación",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_demostraciones": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Demostraciones formales",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_comparaciones": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Comparativas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_ventajas_inconvenientes": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Ventajas e inconvenientes",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_limitaciones": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Limitaciones reconocidas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_incertidumbre": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Incertidumbre reconocida",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_supuestos": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Supuestos explícitos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_causalidad": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Afirmaciones causales",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_recomendaciones": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Recomendaciones",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "incluye_errores_frecuentes": {
+      "grupo": "conocimiento",
+      "etiqueta_ui": "Errores frecuentes",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "accion_solicitada": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Acción solicitada",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "responsables_asignados": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Responsables asignados",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "entregables_definidos": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Entregables",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "fecha_limite_accion": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Plazos de actuación",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "prioridad_explicita": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Prioridad declarada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "urgencia_explicita": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Urgencia declarada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "requisitos_definidos": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Requisitos",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "criterios_aceptacion": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Criterios de aceptación",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "condiciones_ramas": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Condiciones y ramas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "excepciones_reglas": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Excepciones",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "prohibiciones": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Prohibiciones",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "obligaciones": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Obligaciones declaradas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "derechos_facultades": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Derechos o facultades",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "riesgos_identificados": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Riesgos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "medidas_mitigacion": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Medidas preventivas o correctivas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "requisitos_previos": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Condiciones previas de actuación",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "recursos_necesarios": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Recursos necesarios",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "dependencias_tareas": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Dependencias entre tareas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "aprobaciones_requeridas": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Aprobaciones requeridas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "decisiones_tomadas": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Decisiones registradas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "decisiones_pendientes": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Decisiones pendientes",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "procedimiento_escalado": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Escalado o derivación",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "criterios_parada": {
+      "grupo": "operaciones",
+      "etiqueta_ui": "Criterios de parada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "importes_monetarios": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Importes monetarios",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "desglose_precios": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Desglose económico",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "impuestos_desglosados": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Impuestos desglosados",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "condiciones_pago": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Condiciones de pago",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "presupuesto_planificado": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Presupuesto de planificación",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "transacciones_registradas": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Operaciones registradas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "cantidades_unidades": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Mediciones con unidades",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "estadisticas_agregadas": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Estadísticas resumidas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "series_temporales": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Series temporales de datos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "proyecciones_estimaciones": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Proyecciones o estimaciones",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "metas_indicadores": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Objetivos cuantificados",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "registros_individuales": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Registros individuales",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "diccionario_datos": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Diccionario de datos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "identificadores_operativos": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Identificadores operativos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "esquema_clave_valor": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Valores asociados a atributos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "datos_inventario": {
+      "grupo": "economia_datos",
+      "etiqueta_ui": "Inventario o existencias",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "fecha_emision": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Fecha de emisión o publicación",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "fecha_actualizacion": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Fecha de actualización",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "periodo_referencia": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Periodo al que se refieren los datos",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "fecha_vigencia_inicio": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Inicio de aplicación",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "fecha_vigencia_fin": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Fin de aplicación",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "fecha_evento": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Fechas de acontecimientos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "periodicidad": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Recurrencia o periodicidad",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "referencias_relativas": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Fechas relativas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "version_identificada": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Versión identificada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "historico_cambios": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Historial de cambios",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "sustitucion_declarada": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Sustitución documental",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "caducidad_declarada": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Caducidad declarada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "orientacion_temporal": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Orientación temporal",
+      "nucleo": false,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "vigencia_declarada": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Estado de vigencia declarado",
+      "nucleo": false,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "estado_ejecucion": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Estado de ejecución declarado",
+      "nucleo": false,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "relacion_temporal_datos": {
+      "grupo": "tiempo",
+      "etiqueta_ui": "Naturaleza temporal de los valores",
+      "nucleo": false,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "autor_declarado": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Autor declarado",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "emisor_declarado": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Emisor declarado",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "destinatario_declarado": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Destinatario declarado",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "fuentes_citadas": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Fuentes citadas",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "citas_textuales": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Citas textuales",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "enlaces_referencia": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Enlaces de referencia",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "referencias_normativas": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Normativa referenciada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "referencias_otras_piezas": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Documentos relacionados",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "anexos_no_incluidos": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Anexos referidos no suministrados",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "aprobacion_declarada": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Aprobación declarada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "procedencia_datos": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Procedencia de los datos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "metodo_recogida": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Recogida de datos descrita",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "licencia_declarada": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Licencia declarada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "atribucion_terceros": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Material de terceros",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "caracter_oficial_declarado": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Carácter oficial declarado",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "relacion_con_fuentes": {
+      "grupo": "procedencia",
+      "etiqueta_ui": "Relación con las fuentes",
+      "nucleo": false,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "datos_contacto_personales": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Datos de contacto personales",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "identificacion_personal": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Identificación personal directa",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "datos_domicilio_personal": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Domicilio personal",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "datos_financieros_personales": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Datos financieros personales",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "datos_salud_personales": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Datos de salud individual",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "datos_menores": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Información identificable de menores",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "datos_intimos_sensibles": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Información íntima o de creencias",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "credenciales_secretos": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Credenciales o secretos aparentes",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "informacion_interna": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Información interna declarada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "confidencialidad_declarada": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Confidencialidad declarada",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "restriccion_distribucion": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Restricciones de distribución",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "anonimizacion_declarada": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Anonimización declarada",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "ocultaciones_visibles": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Ocultaciones representadas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "instrucciones_riesgo": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Advertencias de riesgo físico",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "instruccion_al_clasificador": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Instrucciones dirigidas al clasificador",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "contenido_personal_privado": {
+      "grupo": "sensibilidad",
+      "etiqueta_ui": "Comunicación privada personal",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "texto_truncado": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Truncamiento visible",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "caracteres_corruptos": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Caracteres corruptos",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "orden_lectura_roto": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Orden de lectura alterado",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "ruido_repetitivo": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Ruido repetitivo",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "tablas_desestructuradas": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Tablas desestructuradas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "referencias_rotas": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Referencias sin destino disponible",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "contenido_duplicado_interno": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Duplicación de contenido",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "contradiccion_explicita": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Contradicciones textuales aparentes",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "marcadores_pendientes": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Secciones pendientes",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "dependencia_visual_no_resuelta": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Dependencia de visuales no proporcionados",
+      "nucleo": true,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "faltan_definiciones_necesarias": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Términos locales sin definir",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "legibilidad_textual": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Legibilidad de la extracción",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "cobertura_semantica": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Suficiencia para clasificar globalmente",
+      "nucleo": true,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "coherencia_unidad": {
+      "grupo": "calidad",
+      "etiqueta_ui": "Coherencia de la unidad",
+      "nucleo": false,
+      "semantica": "categorical",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_transaccional": {
+      "grupo": "usos",
+      "etiqueta_ui": "Componente transaccional",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_contractual": {
+      "grupo": "usos",
+      "etiqueta_ui": "Componente contractual",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_didactico": {
+      "grupo": "usos",
+      "etiqueta_ui": "Componente didáctico",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_procedimental": {
+      "grupo": "usos",
+      "etiqueta_ui": "Componente procedimental",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_referencia": {
+      "grupo": "usos",
+      "etiqueta_ui": "Material de consulta",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_evaluacion": {
+      "grupo": "usos",
+      "etiqueta_ui": "Instrumento de evaluación",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_promocional": {
+      "grupo": "usos",
+      "etiqueta_ui": "Componente promocional",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_narrativo": {
+      "grupo": "usos",
+      "etiqueta_ui": "Componente narrativo",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_testimonial": {
+      "grupo": "usos",
+      "etiqueta_ui": "Testimonio",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_instrucciones_uso": {
+      "grupo": "usos",
+      "etiqueta_ui": "Instrucciones de uso",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_solucion_problemas": {
+      "grupo": "usos",
+      "etiqueta_ui": "Resolución de problemas",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "componente_plantilla_reutilizable": {
+      "grupo": "usos",
+      "etiqueta_ui": "Plantilla reutilizable",
+      "nucleo": false,
+      "semantica": "presence",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "evaluabilidad_complejidad_lectura": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Conocimientos previos exigidos",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_complejidad_lectura": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Conocimientos previos exigidos",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_complejidad_lectura"
+    },
+    "evaluabilidad_abstraccion": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Abstracción",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_abstraccion": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Abstracción",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_abstraccion"
+    },
+    "evaluabilidad_detalle_desarrollo": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Detalle de desarrollo",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_detalle_desarrollo": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Detalle de desarrollo",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_detalle_desarrollo"
+    },
+    "evaluabilidad_accionabilidad": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Detalle práctico de las instrucciones",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_accionabilidad": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Detalle práctico de las instrucciones",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_accionabilidad"
+    },
+    "evaluabilidad_organizacion": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Organización para consultar",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_organizacion": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Organización para consultar",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_organizacion"
+    },
+    "evaluabilidad_densidad_cuantitativa": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Peso de la información cuantitativa",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_densidad_cuantitativa": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Peso de la información cuantitativa",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_densidad_cuantitativa"
+    },
+    "evaluabilidad_orientacion_ejemplos": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Desarrollo mediante ejemplos",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_orientacion_ejemplos": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Desarrollo mediante ejemplos",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_orientacion_ejemplos"
+    },
+    "evaluabilidad_dependencia_contexto": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Dependencia de contexto externo",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_dependencia_contexto": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Dependencia de contexto externo",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_dependencia_contexto"
+    },
+    "evaluabilidad_sensibilidad_temporal": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Dependencia temporal del contenido",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_sensibilidad_temporal": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Dependencia temporal del contenido",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_sensibilidad_temporal"
+    },
+    "evaluabilidad_intensidad_promocional": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Intensidad promocional",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_intensidad_promocional": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Intensidad promocional",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_intensidad_promocional"
+    },
+    "evaluabilidad_peso_opinion": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Peso de opiniones explícitas",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_peso_opinion": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Peso de opiniones explícitas",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_peso_opinion"
+    },
+    "evaluabilidad_incertidumbre_explicada": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Aplicabilidad: Desarrollo de la incertidumbre",
+      "nucleo": false,
+      "semantica": "applicability",
+      "alcance_resultado": "unidad_examinada"
+    },
+    "score_incertidumbre_explicada": {
+      "grupo": "escalas",
+      "etiqueta_ui": "Desarrollo de la incertidumbre",
+      "nucleo": false,
+      "semantica": "ordinal_score",
+      "alcance_resultado": "unidad_examinada",
+      "control_aplicabilidad": "evaluabilidad_incertidumbre_explicada"
+    }
+  },
+  "nucleo": [
+    "tipo_documental",
+    "finalidad_principal",
+    "unidad_documental",
+    "modo_representacion",
+    "idioma_principal",
+    "audiencia_principal",
+    "ambito_uso",
+    "estado_elaboracion",
+    "caracter_realidad",
+    "dependencia_documental",
+    "tiene_secciones",
+    "tiene_resumen",
+    "tiene_bibliografia",
+    "tiene_tablas",
+    "tiene_pasos",
+    "tiene_checklist",
+    "tiene_preguntas",
+    "tiene_qa",
+    "tiene_campos",
+    "tiene_codigo",
+    "tiene_formulas",
+    "explica_conceptos",
+    "incluye_ejemplos",
+    "incluye_metodologia",
+    "incluye_resultados",
+    "incluye_comparaciones",
+    "incluye_recomendaciones",
+    "accion_solicitada",
+    "fecha_limite_accion",
+    "requisitos_definidos",
+    "condiciones_ramas",
+    "obligaciones",
+    "importes_monetarios",
+    "condiciones_pago",
+    "estadisticas_agregadas",
+    "fecha_emision",
+    "periodo_referencia",
+    "autor_declarado",
+    "fuentes_citadas",
+    "datos_contacto_personales",
+    "identificacion_personal",
+    "datos_salud_personales",
+    "credenciales_secretos",
+    "confidencialidad_declarada",
+    "instruccion_al_clasificador",
+    "texto_truncado",
+    "dependencia_visual_no_resuelta",
+    "legibilidad_textual",
+    "cobertura_semantica"
+  ],
+  "nota": "El manifiesto es configuración de la aplicación, no un cuerpo de petición de la API."
+}

@@ -1,0 +1,11 @@
+node_modules/
+.venv/
+.git/
+docs/
+data/
+exports/
+output/
+tmp/
+catalog/
+uv.lock
+package-lock.json

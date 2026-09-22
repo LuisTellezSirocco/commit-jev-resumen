@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atlas · Explorador documental JEV</title>
+    <style>
+      /* APP_CSS */
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="#" class="brand" aria-label="Atlas, inicio"
+        ><span class="brand-icon">a</span>atlas<span class="brand-caption"
+          >DOCUMENT INTELLIGENCE</span
+        ></a
+      >
+      <div class="top-right">
+        <span class="live-dot"></span><span id="model-label">JEV</span
+        ><span class="local-pill">Colección local</span>
+      </div>
+    </header>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-heading"><span>Tu biblioteca</span><span class="tiny">01</span></div>
+        <button class="collection active" id="all-docs">
+          <span>▤ &nbsp; Todos los documentos</span><b id="total-side">0</b>
+        </button>
+        <div class="filter-heading">
+          <h2>Filtros</h2>
+          <button class="text-button mobile-toggle" id="mobile-filters" aria-expanded="false">
+            Mostrar filtros +</button
+          ><button class="text-button" id="clear">Limpiar</button>
+        </div>
+        <p class="side-note">Combina dimensiones para afinar la búsqueda.</p>
+        <label class="field-label" for="filter-search">Buscar un filtro</label>
+        <input id="filter-search" class="small-input" placeholder="Código, pagos, metodología…" />
+        <div id="filters"></div>
+        <details class="policy">
+          <summary>Cómo leer las etiquetas</summary>
+          <p>
+            El umbral de confianza es exploratorio, no una garantía de exactitud. Los filtros usan
+            decisiones aceptadas a partir de 0,70.
+          </p>
+          <p>
+            «No observado» se refiere al texto examinado. Las imágenes no se interpretan. «En
+            fragmentos» no significa que el tema domine todo el documento.
+          </p>
+        </details>
+        <a class="report-link" href="informe.md" target="_blank">↗ Informe de la ejecución</a>
+      </aside>
+      <main>
+        <div class="eyebrow">EXPLORADOR DOCUMENTAL <span> / </span> DOCS</div>
+        <section class="hero">
+          <div>
+            <h1>Encuentra lo que necesitas.</h1>
+            <p>Una colección, muchas formas de explorarla.</p>
+          </div>
+          <div class="collection-mark">▤</div>
+        </section>
+        <div class="stats" id="stats"></div>
+        <section class="search-panel" aria-label="Búsqueda">
+          <div class="search-row">
+            <span class="search-icon">⌕</span
+            ><input
+              id="query"
+              aria-label="Buscar en los documentos"
+              placeholder="Busca un nombre, concepto o frase en tus documentos…"
+            /><kbd>⌘ K</kbd>
+          </div>
+          <div class="search-bottom">
+            <div class="search-modes">
+              <button id="text-mode" class="mode active">Texto</button
+              ><button id="jev-mode" class="mode">✧ Preguntar a JEV</button>
+            </div>
+            <span id="search-help">Busca en el texto completo, sin enviar nuevas peticiones.</span
+            ><button id="run-search" class="primary" hidden>Buscar con JEV ↗</button>
+          </div>
+        </section>
+        <div id="search-message" role="status" class="search-message" hidden></div>
+        <div id="semantic-options" class="semantic-options" hidden>
+          <label for="relevance">Coincidencia mínima</label
+          ><select id="relevance">
+            <option value="0.5">50% · estándar</option>
+            <option value="0.25">25% · incluir posibles coincidencias</option>
+            <option value="0.75">75% · más exigente</option></select
+          ><span>Amplía el umbral para revisar resultados dudosos.</span>
+        </div>
+        <div class="discovery">
+          <span>PRUEBA CON</span>
+          <div id="presets"></div>
+        </div>
+        <div id="active-filters" class="active-filters"></div>
+        <div class="results-toolbar">
+          <div>
+            <h2>Documentos <span id="result-count">0</span></h2>
+            <p id="result-context">Toda tu colección, clasificada.</p>
+          </div>
+          <div class="toolbar-actions">
+            <label for="sort" class="sr-only">Ordenar documentos</label
+            ><select id="sort">
+              <option value="name">Nombre A–Z</option>
+              <option value="pages">Más páginas</option>
+              <option value="words">Más palabras</option>
+              <option value="review">Más dudas</option></select
+            ><button id="export" class="secondary">↓ Exportar</button>
+          </div>
+        </div>
+        <div id="results" class="cards"></div>
+        <footer>
+          <span>Clasificación con JEV · Texto extraído localmente</span><span id="generated"></span>
+        </footer>
+      </main>
+    </div>
+    <dialog id="detail"><div id="detail-content"></div></dialog>
+    <script id="dataset" type="application/json">
+      /* DATA_JSON */
+    </script>
+    <script>
+      /* APP_JS */
+    </script>
+  </body>
+</html>
