@@ -6,6 +6,6 @@ data/
 exports/
 output/
 tmp/
-catalog/
+jevdocs/catalog/
 uv.lock
 package-lock.json

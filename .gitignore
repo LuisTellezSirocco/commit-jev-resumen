@@ -15,9 +15,7 @@
 !/package-lock.json
 !/Makefile
 !/iniciar.sh
-!/catalog/
 !/jevdocs/
-!/web/
 !/scripts/
 !/tests/
 !/examples/
@@ -67,3 +65,8 @@ node_modules/
 *.key
 *.p12
 *.pfx
+
+# Distribution artifacts and Python build metadata
+dist/
+build/
+*.egg-info/

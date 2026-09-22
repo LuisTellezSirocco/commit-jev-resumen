@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from jevdocs.core import ROOT, JevClient, save_json
+from jevdocs.core import JevClient, save_json, workspace_root
 from jevdocs.server import search_documents
 
 
@@ -18,13 +18,15 @@ def exact_matches(found, expected):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--cases", type=Path, default=ROOT / "data/evaluation-cases.json")
+    parser.add_argument(
+        "--cases", type=Path, default=workspace_root() / "data/evaluation-cases.json"
+    )
     args = parser.parse_args()
     if not args.cases.is_file():
         parser.error(
             "Crea data/evaluation-cases.json siguiendo examples/evaluation-cases.example.json"
         )
-    index = json.loads((ROOT / "data/index.json").read_text())
+    index = json.loads((workspace_root() / "data/index.json").read_text())
     cases = json.loads(args.cases.read_text())
     out = {
         "scope": "Comprobaciones seleccionadas por el usuario; no miden precisión global.",
@@ -74,7 +76,7 @@ def main():
             )
     finally:
         client.close()
-    save_json(ROOT / "output/validacion.json", out)
+    save_json(workspace_root() / "output/validacion.json", out)
     lines = ["# Validación de la colección local", "", out["scope"], ""]
     for group, title in [("facets", "Facetas"), ("searches", "Búsquedas")]:
         passed = sum(case["pass"] for case in out[group])
@@ -90,7 +92,7 @@ def main():
         "",
         "Los umbrales son exploratorios. Se conserva el resultado estándar para no ocultar discrepancias.",
     ]
-    (ROOT / "output/validacion.md").write_text("\n".join(lines))
+    (workspace_root() / "output/validacion.md").write_text("\n".join(lines))
     print(
         "Evaluación terminada. Informes privados en output/validacion.json y output/validacion.md."
     )

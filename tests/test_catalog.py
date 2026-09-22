@@ -2,12 +2,12 @@ from __future__ import annotations
 
 import json
 import unittest
-from pathlib import Path
+from importlib.resources import files
 
-from crear_peticiones import build_requests, load_json, select_ids, validate_state
-from normalizar_respuestas import normalize
+from jevdocs.catalog.crear_peticiones import build_requests, load_json, select_ids, validate_state
+from jevdocs.catalog.normalizar_respuestas import normalize
 
-ROOT = Path(__file__).resolve().parent
+ROOT = files("jevdocs.catalog")
 BANK = load_json(ROOT / "preguntas_jev.json")
 MANIFEST = load_json(ROOT / "catalogo.json")
 STATE = {
@@ -59,7 +59,9 @@ class CatalogueTests(unittest.TestCase):
         self.assertNotIn("TODO:", text)
 
     def test_all_json_parse(self):
-        for path in ROOT.glob("*.json"):
+        for path in ROOT.iterdir():
+            if not path.name.endswith(".json"):
+                continue
             self.assertIsNotNone(load_json(path))
 
     def test_selection(self):

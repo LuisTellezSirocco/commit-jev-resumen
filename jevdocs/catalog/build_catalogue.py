@@ -1,10 +1,10 @@
 from __future__ import annotations
 
+import argparse
 import json
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
 QUESTIONS: dict[str, dict] = {}
 META: dict[str, dict] = {}
 GROUPS: dict[str, str] = {
@@ -1767,8 +1767,13 @@ for key, title, question, levels, premise in SCALES:
         applicability=gate,
     )
 
-if __name__ == "__main__":
-    (ROOT / "preguntas_jev.json").write_text(
+
+def main():
+    parser = argparse.ArgumentParser(description="Regenerar el catálogo genérico")
+    parser.add_argument("--output", type=Path, default=Path("catalog"))
+    root = parser.parse_args().output
+    root.mkdir(parents=True, exist_ok=True)
+    (root / "preguntas_jev.json").write_text(
         json.dumps(QUESTIONS, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     manifest = {
@@ -1784,9 +1789,13 @@ if __name__ == "__main__":
         "nucleo": [k for k, m in META.items() if m["nucleo"]],
         "nota": "El manifiesto es configuración de la aplicación, no un cuerpo de petición de la API.",
     }
-    (ROOT / "catalogo.json").write_text(
+    (root / "catalogo.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print("TOTAL", len(QUESTIONS), "CORE", len(manifest["nucleo"]))
     print(Counter(m["grupo"] for m in META.values()))
     print("KINDS", Counter(q["type"] for q in QUESTIONS.values()))
+
+
+if __name__ == "__main__":
+    main()

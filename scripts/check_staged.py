@@ -28,7 +28,7 @@ def check_staged(root):
                 return 1
             selected = (
                 name.endswith(".py")
-                or name.startswith("web/")
+                or name.startswith("jevdocs/web/")
                 or name
                 in {
                     "pyproject.toml",
@@ -47,7 +47,7 @@ def check_staged(root):
         commands = [
             [sys.executable, "-m", "ruff", "check", "."],
             [sys.executable, "-m", "ruff", "format", "--check", "."],
-            ["node", str(prettier), "--check", "web"],
+            ["node", str(prettier), "--check", "jevdocs/web"],
         ]
         for command in commands:
             result = subprocess.run(command, cwd=snapshot, check=False)

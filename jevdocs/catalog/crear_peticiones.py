@@ -3,8 +3,8 @@
 
 Python >=3.11, solo biblioteca estándar.
 Ejemplo:
-  python crear_peticiones.py --state estado.json --nucleo --salida peticiones
-  python crear_peticiones.py --state estado.json --grupos temas,estructura --salida peticiones
+  python -m jevdocs.catalog.crear_peticiones --state estado.json --nucleo --salida peticiones
+  python -m jevdocs.catalog.crear_peticiones --state estado.json --grupos temas,estructura --salida peticiones
 
 El tamaño de lote es una preferencia de esta herramienta, NO un límite de la API.
 Debe comprobarse además el presupuesto de tokens antes de enviar cada petición.
@@ -15,10 +15,11 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from importlib.resources import files
 from pathlib import Path
 from typing import Any
 
-ROOT = Path(__file__).resolve().parent
+ROOT = files("jevdocs.catalog")
 
 
 def load_json(path: Path) -> Any:

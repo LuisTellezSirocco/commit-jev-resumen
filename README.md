@@ -1,6 +1,6 @@
 # Atlas · Explorador documental con JEV
 
-Implementación del catálogo de `catalog`: clasifica PDF con las **235 preguntas originales**, conserva las decisiones por unidad y genera un **HTML autónomo** con filtros y fichas documentales. Incluye un servidor local para consultas en lenguaje natural contra JEV.
+Implementación del catálogo de `jevdocs.catalog`: clasifica PDF con las **235 preguntas originales**, conserva las decisiones por unidad y genera un **HTML autónomo** con filtros y fichas documentales. Incluye un servidor local para consultas en lenguaje natural contra JEV.
 
 El repositorio público no incluye documentos propios, claves, conversaciones ni resultados de clasificación. Consulta [PUBLISHING.md](PUBLISHING.md) para activar los controles de Git y revisar qué se publica.
 
@@ -26,7 +26,27 @@ cp .env.example .env
 
 Si ya tienes `.env`, consérvalo. No reemplaces la clave existente.
 
-`pyproject.toml` define el proyecto y `uv.lock` fija las versiones de las dependencias. Ruff y pytest están en el grupo de desarrollo; para instalar solo las dependencias de ejecución utiliza `uv sync --locked --no-dev`. La aplicación se ejecuta desde el repositorio (`uv run --locked python -m jevdocs`); no se distribuye como wheel porque utiliza los recursos locales de `catalog/` y `web/`. `requirements.txt` es una exportación de compatibilidad generada, no se edita a mano.
+`pyproject.toml` define el proyecto y `uv.lock` fija las versiones de las dependencias. Ruff y pytest están en el grupo de desarrollo; para instalar solo las dependencias de ejecución utiliza `uv sync --locked --no-dev`. El paquete instala el comando `jevdocs` y conserva la alternativa `python -m jevdocs`. El catálogo y los recursos HTML se incluyen en la distribución y se leen con `importlib.resources`. `requirements.txt` es una exportación de compatibilidad generada, no se edita a mano.
+
+## Instalar como paquete
+
+```bash
+# Desde el repositorio, con pip en un entorno virtual
+python -m pip install .
+jevdocs --help
+
+# Construir wheel y sdist, revisar su contenido y probar una instalación aislada
+make package
+
+# Instalar el wheel en otro entorno
+python -m pip install dist/atlas_jev_docs-0.1.0-py3-none-any.whl
+```
+
+No está publicado en PyPI. `make package` crea los archivos localmente; no los sube.
+
+Ejecuta `jevdocs classify`, `jevdocs build` o `jevdocs serve` desde la carpeta de tu colección. Por defecto, `.env`, `docs/`, `data/` y `output/` se resuelven desde el directorio actual. Para fijar otra carpeta, usa `JEV_WORKSPACE=/ruta/coleccion jevdocs serve` (variable del proceso, no del `.env`). Las opciones explícitas `--docs` y `--output` siguen resolviéndose desde el directorio actual. Nunca se escriben datos privados en el paquete instalado.
+
+El formato de empaquetado sigue la [configuración de Hatch](https://hatch.pypa.io/latest/config/build/) y la lectura de recursos utiliza la [API estándar de Python](https://docs.python.org/3/library/importlib.resources.html).
 
 ## Desarrollo y formato
 
@@ -39,6 +59,7 @@ make lint-fix     # Correcciones automáticas seguras de Ruff
 make format       # Ruff para Python; Prettier para HTML, CSS y JavaScript
 make check        # Lint, comprobación de formato y pruebas sin llamar a JEV
 make serve        # Servidor local
+make package      # Distribuciones y prueba de instalación aislada
 ```
 
 Ruff utiliza `pyproject.toml` y Prettier `.prettierrc.json`. `.editorconfig` y los ajustes de VS Code comparten esas reglas y usan las herramientas instaladas en el proyecto. Los hooks comprueban una copia temporal del **índice de Git**, sin reformatear archivos ni añadir cambios por su cuenta. Tras corregir el formato, prepara de nuevo los archivos con `git add`.
@@ -104,16 +125,17 @@ Las fichas combinan decisiones cerradas y extractos, no resúmenes narrativos in
 7. **Agregación.** Una presencia aceptada basta para localizar contenido. Para publicar «no observado» hacen falta todas las unidades aceptadas y cobertura textual completa. Temas centrales/secundarios se conservan como locales si hay varias unidades. Las categorías contradictorias quedan en revisión. Un tipo aceptado solo en fragmentos sigue siendo buscable con ese alcance explícito.
 8. **Fallos visibles.** Se conservan respuestas parciales y preguntas sin evaluar. La CLI termina con error si hay archivos o lotes fallidos. Volver a ejecutar reutiliza lo ya guardado.
 
-`catalog/` contiene únicamente el catálogo genérico publicable. Las conversaciones y exportaciones de trabajo permanecen en `exports/`, excluido de Git. `normalizar_respuestas.py` del paquete original se mantiene como referencia; la aplicación incorpora su propia normalización porque necesita reglas por fragmento, aceptación provisional y agregación.
+`jevdocs/catalog/` contiene únicamente el catálogo genérico publicable. Las conversaciones y exportaciones de trabajo permanecen en `exports/`, excluido de Git. `normalizar_respuestas.py` del paquete original se mantiene como referencia; la aplicación incorpora su propia normalización porque necesita reglas por fragmento, aceptación provisional y agregación.
 
 ## Archivos
 
 | Ruta | Contenido |
 |---|---|
+| `jevdocs/catalog/` | Subpaquete con las 235 preguntas, manifiesto y utilidades |
 | `jevdocs/core.py` | Extracción, segmentación, cliente HTTP, validación, caché y normalización |
 | `jevdocs/__main__.py` | CLI, ejecución y generación del HTML y del informe |
 | `jevdocs/server.py` | Servidor local y búsqueda `Noul` sobre las unidades |
-| `web/` | Fuentes del HTML, estilos y JavaScript sin dependencias |
+| `jevdocs/web/` | Fuentes del HTML, estilos y JavaScript sin dependencias |
 | `data/cache/` | Peticiones/respuestas reales, hash, modelo, uso y latencia |
 | `data/documents/` | Fichas completas con texto, decisiones y trazabilidad |
 | `data/index.json` | Índice interno reproducible |
@@ -127,7 +149,7 @@ Las fichas combinan decisiones cerradas y extractos, no resúmenes narrativos in
 ## Pruebas
 
 ```bash
-.venv/bin/python -m pytest -q tests catalog/test_kit.py
+.venv/bin/python -m pytest -q tests
 
 # Evaluación configurable con tus propios casos privados (usa JEV; caché disponible)
 .venv/bin/python scripts/evaluate.py

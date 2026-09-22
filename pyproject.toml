@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
 [project]
 name = "atlas-jev-docs"
 version = "0.1.0"
@@ -16,12 +20,17 @@ dev = [
     "ruff==0.16.7",
 ]
 
-[tool.uv]
-# Aplicación ejecutada desde el checkout; catalog/ y web/ son recursos del proyecto.
-package = false
+[project.scripts]
+jevdocs = "jevdocs.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["jevdocs"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["jevdocs", "pyproject.toml", "README.md"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests", "catalog/test_kit.py"]
+testpaths = ["tests"]
 pythonpath = ["."]
 addopts = "-ra"
 
@@ -38,7 +47,6 @@ select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
 [tool.ruff.lint.per-file-ignores]
 # Estos scripts admiten ejecución directa y configuran su ruta antes de importar.
 "scripts/evaluate.py" = ["E402"]
-"catalog/build_support.py" = ["E402"]
 
 [tool.ruff.format]
 quote-style = "double"

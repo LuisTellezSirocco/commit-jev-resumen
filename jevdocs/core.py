@@ -12,19 +12,24 @@ import tempfile
 import time
 from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
+from importlib.resources import files
 from pathlib import Path
 
 import httpx
 import pymupdf
 from dotenv import load_dotenv
 
-ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "catalog"
+CATALOG = files("jevdocs.catalog")
 ENDPOINT = "https://api.typesafe.ai/v1/systemone"
 PIPELINE_VERSION = "1.0.0"
 STATE_BYTES = 19000
 REQUEST_BYTES = 55000
 INDIVIDUAL_BYTES = 29000
+
+
+def workspace_root():
+    """Private runtime files belong to the working directory, never site-packages."""
+    return Path(os.environ.get("JEV_WORKSPACE", Path.cwd())).expanduser().resolve()
 
 
 def stamp():
@@ -49,8 +54,8 @@ def save_json(path, value):
 
 def load_catalog():
     return (
-        json.loads((CATALOG / "preguntas_jev.json").read_text()),
-        json.loads((CATALOG / "catalogo.json").read_text()),
+        json.loads((CATALOG / "preguntas_jev.json").read_text(encoding="utf-8")),
+        json.loads((CATALOG / "catalogo.json").read_text(encoding="utf-8")),
     )
 
 
@@ -100,7 +105,7 @@ def extract(path: Path, source_root: Path):
                     image_path = Path(temp) / "page.png"
                     page.get_pixmap(matrix=pymupdf.Matrix(2, 2)).save(image_path)
                     try:
-                        spanish = ROOT / "data/tessdata/spa.traineddata"
+                        spanish = workspace_root() / "data/tessdata/spa.traineddata"
                         lang_args = (
                             ["--tessdata-dir", str(spanish.parent), "-l", "spa"]
                             if spanish.exists()
@@ -295,10 +300,10 @@ def validate_response(response, questions):
 
 class JevClient:
     def __init__(self, cache_dir=None, model=None, transport=None):
-        load_dotenv(ROOT / ".env")
+        load_dotenv(workspace_root() / ".env")
         self.key = os.environ.get("JEV_API_KEY", "")
         self.model = model or os.environ.get("JEV_MODEL", "jev-1.13.0")
-        self.cache_dir = Path(cache_dir or ROOT / "data/cache")
+        self.cache_dir = Path(cache_dir or workspace_root() / "data/cache")
         self.http = httpx.Client(timeout=120, transport=transport, follow_redirects=False)
 
     def close(self):

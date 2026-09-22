@@ -5,11 +5,11 @@ import json
 import shutil
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from importlib.resources import files
 from pathlib import Path
 
 from .core import (
     PIPELINE_VERSION,
-    ROOT,
     JevClient,
     aggregate,
     batch_questions,
@@ -20,6 +20,7 @@ from .core import (
     packed,
     save_json,
     stamp,
+    workspace_root,
 )
 
 
@@ -32,9 +33,10 @@ def build(index, output):
     serialized = (
         packed(data).replace("&", "\\u0026").replace("<", "\\u003c").replace(">", "\\u003e")
     )
-    html = (ROOT / "web/index.html").read_text()
-    html = html.replace("/* APP_CSS */", (ROOT / "web/style.css").read_text())
-    html = html.replace("/* APP_JS */", (ROOT / "web/app.js").read_text())
+    assets = files("jevdocs").joinpath("web")
+    html = assets.joinpath("index.html").read_text(encoding="utf-8")
+    html = html.replace("/* APP_CSS */", assets.joinpath("style.css").read_text(encoding="utf-8"))
+    html = html.replace("/* APP_JS */", assets.joinpath("app.js").read_text(encoding="utf-8"))
     html = html.replace("/* DATA_JSON */", serialized)
     (output / "index.html").write_text(html)
     save_json(output / "index.json", data)
@@ -204,7 +206,7 @@ def classify(args):
     for doc in documents:
         doc["facets"] = aggregate(doc, bank, manifest)
         doc["status"] = "complete" if doc["units"] and not doc["errors"] else "incomplete"
-        save_json(ROOT / "data/documents" / f"{doc['id']}.json", doc)
+        save_json(workspace_root() / "data/documents" / f"{doc['id']}.json", doc)
     index = {
         "created_at": stamp(),
         "pipeline_version": PIPELINE_VERSION,
@@ -218,7 +220,7 @@ def classify(args):
         "extraction_errors": errors,
         "run": {**usage, "seconds": round(time.monotonic() - started, 2)},
     }
-    save_json(ROOT / "data/index.json", index)
+    save_json(workspace_root() / "data/index.json", index)
     build(index, args.output)
     print(f"HTML generado: {Path(args.output).resolve() / 'index.html'}", flush=True)
     if errors or any(d["status"] == "incomplete" for d in documents):
@@ -231,23 +233,23 @@ def main():
     parser = argparse.ArgumentParser(description="Clasificación documental y explorador JEV")
     commands = parser.add_subparsers(dest="command", required=True)
     p = commands.add_parser("classify")
-    p.add_argument("--docs", default=str(ROOT / "docs"))
-    p.add_argument("--output", default=str(ROOT / "output"))
+    p.add_argument("--docs", default=str(workspace_root() / "docs"))
+    p.add_argument("--output", default=str(workspace_root() / "output"))
     p.add_argument("--profile", choices=["full", "core"], default="full")
     p.add_argument("--model")
     p.add_argument("--workers", type=int, choices=range(1, 9), default=3)
     p.add_argument("--limit", type=int)
     p.add_argument("--dry-run", action="store_true")
     p = commands.add_parser("build")
-    p.add_argument("--output", default=str(ROOT / "output"))
+    p.add_argument("--output", default=str(workspace_root() / "output"))
     p = commands.add_parser("serve")
     p.add_argument("--port", type=int, default=8765)
-    p.add_argument("--output", default=str(ROOT / "output"))
+    p.add_argument("--output", default=str(workspace_root() / "output"))
     args = parser.parse_args()
     if args.command == "classify":
         classify(args)
     elif args.command == "build":
-        build(json.loads((ROOT / "data/index.json").read_text()), args.output)
+        build(json.loads((workspace_root() / "data/index.json").read_text()), args.output)
     else:
         from .server import serve
 

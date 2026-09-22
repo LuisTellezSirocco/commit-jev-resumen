@@ -1,4 +1,4 @@
-.PHONY: setup format lint-fix lint check test check-publish serve build export-requirements
+.PHONY: setup format lint-fix lint check test check-publish serve build package export-requirements
 
 setup:
 	uv sync --locked
@@ -32,5 +32,9 @@ serve:
 build:
 	uv run --locked python -m jevdocs build
 
+package:
+	uv build
+	uv run --locked python scripts/check_package.py
+
 export-requirements:
-	uv export --locked --no-dev --no-hashes --output-file requirements.txt
+	uv export --locked --no-dev --no-emit-project --no-hashes --output-file requirements.txt

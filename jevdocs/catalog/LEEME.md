@@ -21,10 +21,10 @@ Los **30 campos deterministas** se calculan o extraen fuera de Jev. No se incluy
 | `normalizar_respuestas.py` | Conserva resultados brutos y aplica decisiones de aceptación externas. |
 | `casos_prueba_sinteticos.json` | 11 casos inventados con expectativas iniciales; no se han ejecutado contra Jev. |
 | `preguntas.schema.json` | Esquema local de validación estructural, no OpenAPI oficial. |
-| `test_kit.py` | Pruebas unitarias del catálogo, selección, lotes y normalización. |
+| `tests/test_catalog.py` (en el repositorio) | Pruebas unitarias del catálogo, selección, lotes y normalización. |
 | `fuentes.json` | Documentación oficial consultada para el contrato técnico. |
 
-`build_catalogue.py` y `build_support.py` permiten regenerar el banco y sus archivos descriptivos. Los IDs son claves de software; el significado completo figura en las instrucciones porque Jev no utiliza el ID para inferir [1, 2].
+`build_catalogue.py` y `build_support.py` permiten regenerar el banco y sus archivos descriptivos. Ejecuta `python -m jevdocs.catalog.build_catalogue --output jevdocs/catalog` y `python -m jevdocs.catalog.build_support --output jevdocs/catalog` desde el checkout para regenerarlos. Sin `--output`, escriben en `catalog/` del directorio actual; importarlos no escribe archivos. Los IDs son claves de software; el significado completo figura en las instrucciones porque Jev no utiliza el ID para inferir [1, 2].
 
 ## 1. Qué significa clasificar aquí
 
@@ -113,10 +113,10 @@ Las fechas tienen roles: emisión, actualización, periodo de referencia, evento
 Rellena `estado_plantilla.json` y guárdalo como `estado.json`. Cambia cobertura y banderas según el pipeline, no según una suposición. `full` significa cobertura declarada del original por tu extractor; la calidad y la disponibilidad de contenido visual siguen siendo dimensiones separadas.
 
 ```bash
-python crear_peticiones.py --state estado.json --nucleo --salida peticiones_nucleo
-python crear_peticiones.py --state estado.json --grupos temas --salida peticiones_temas
-python crear_peticiones.py --state estado.json --grupos estructura,operaciones --salida peticiones_extra
-python crear_peticiones.py --state estado.json --grupos escalas --salida peticiones_escalas
+python -m jevdocs.catalog.crear_peticiones --state estado.json --nucleo --salida peticiones_nucleo
+python -m jevdocs.catalog.crear_peticiones --state estado.json --grupos temas --salida peticiones_temas
+python -m jevdocs.catalog.crear_peticiones --state estado.json --grupos estructura,operaciones --salida peticiones_extra
+python -m jevdocs.catalog.crear_peticiones --state estado.json --grupos escalas --salida peticiones_escalas
 ```
 
 El script construye archivos que la integración puede enviar al endpoint oficial. No instala paquetes, no solicita una clave, no envía documentos y no presupone que tengas un SDK. Por defecto usa lotes de hasta 32 preguntas, una preferencia local configurable.

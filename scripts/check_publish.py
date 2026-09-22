@@ -26,6 +26,7 @@ ROOT_FILES = {
     "Makefile",
 }
 PUBLIC_DIRS = {
+    # catalog/ and web/ remain accepted for auditing commits before the package move.
     "catalog",
     "jevdocs",
     "web",

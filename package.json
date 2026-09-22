@@ -4,8 +4,8 @@
   "private": true,
   "description": "Development tools for the static document explorer",
   "scripts": {
-    "format": "prettier --write web",
-    "format:check": "prettier --check web"
+    "format": "prettier --write jevdocs/web",
+    "format:check": "prettier --check jevdocs/web"
   },
   "devDependencies": {
     "prettier": "3.9.8"

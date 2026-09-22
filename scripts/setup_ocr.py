@@ -1,10 +1,10 @@
-"""Install only the official Spanish OCR model in this project's data directory."""
-
-from pathlib import Path
+"""Install only the official Spanish OCR model in the collection's data directory."""
 
 import httpx
 
-path = Path(__file__).resolve().parents[1] / "data/tessdata/spa.traineddata"
+from jevdocs.core import workspace_root
+
+path = workspace_root() / "data/tessdata/spa.traineddata"
 if path.exists():
     print("El modelo español ya está instalado.")
 else:

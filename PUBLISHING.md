@@ -35,7 +35,6 @@ Estas comprobaciones reducen errores accidentales; no identifican cualquier dato
 ## Subir cuando hayas creado el repositorio en GitHub
 
 ```bash
-git commit -m "Initial public source"
 git remote add origin <URL_DEL_REPOSITORIO>
 git push -u origin main
 ```
@@ -45,7 +44,11 @@ La preparación local no crea un repositorio remoto ni sube archivos. No adjunte
 ## Comprobar una copia limpia
 
 ```bash
-.venv/bin/python -m pytest -q tests catalog/test_kit.py
+.venv/bin/python -m pytest -q tests
 ```
 
 Estas pruebas no requieren `.env`, PDF propios, resultados generados ni peticiones a JEV. Para usar la aplicación después de clonar, configura tu propia clave y crea `docs/` con documentos locales.
+
+## Distribuciones Python
+
+`make package` genera wheel y sdist únicamente con `jevdocs`, recursos genéricos y metadatos del proyecto. Revisa ambos archivos con las mismas reglas de privacidad y prueba el wheel desde un entorno temporal fuera del checkout. `dist/` queda fuera de Git. No añadas documentos ni resultados al interior de `jevdocs/`.
