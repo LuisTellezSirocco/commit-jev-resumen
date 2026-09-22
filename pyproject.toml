@@ -23,6 +23,10 @@ dev = [
 [project.scripts]
 jevdocs = "jevdocs.__main__:main"
 
+[tool.uv]
+# Keep the lockfile policy identical on developer machines and clean CI runners.
+exclude-newer = "7 days"
+
 [tool.hatch.build.targets.wheel]
 packages = ["jevdocs"]
 

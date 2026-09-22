@@ -1,5 +1,8 @@
 import importlib.util
+import os
+import shutil
 import subprocess
+import sys
 import tomllib
 from pathlib import Path
 
@@ -13,6 +16,26 @@ def test_ruff_version_aligned_with_dependencies():
     config = tomllib.loads((ROOT / "pyproject.toml").read_text())
     version = config["tool"]["ruff"]["required-version"]
     assert f"ruff{version}" in config["dependency-groups"]["dev"]
+
+
+def test_lockfile_valid_without_user_uv_configuration(tmp_path):
+    for name in ("pyproject.toml", "uv.lock", "README.md", ".python-version"):
+        shutil.copyfile(ROOT / name, tmp_path / name)
+    env = dict(os.environ)
+    env["XDG_CONFIG_HOME"] = str(tmp_path / "empty-config")
+    env["UV_PYTHON"] = sys.executable
+    for name in ("UV_CONFIG_FILE", "UV_EXCLUDE_NEWER", "UV_NO_CONFIG", "VIRTUAL_ENV"):
+        env.pop(name, None)
+    result = subprocess.run(
+        ["uv", "lock", "--check", "--offline"],
+        cwd=tmp_path,
+        env=env,
+        capture_output=True,
+        text=True,
+        timeout=30,
+        check=False,
+    )
+    assert result.returncode == 0, result.stderr
 
 
 def test_format_hook_checks_staged_content_without_modifying_it(tmp_path, monkeypatch):

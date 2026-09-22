@@ -68,6 +68,8 @@ El workflow de GitHub Actions ejecuta los mismos controles y las comprobaciones 
 
 Para actualizar dependencias, cambia `pyproject.toml` o `package.json`, regenera sus lockfiles y ejecuta `make check`. Si cambias Ruff, alinea también `tool.ruff.required-version`. Regenera `requirements.txt` con `make export-requirements`.
 
+La política `tool.uv.exclude-newer = "7 days"` está declarada en el proyecto para que la resolución y validación del lockfile coincidan en local y en CI, sin depender de la configuración global de `uv`.
+
 Para PDF escaneados o fuentes corruptas se utiliza **Tesseract** si está disponible:
 
 ```bash
